@@ -1,15 +1,32 @@
-VANTA.WAVES({
-  el: "#wave",
-  mouseControls: true,
-  touchControls: true,
-  gyroControls: false,
-  minHeight: 200.00,
-  minWidth: 200.00,
-  scale: 1.00,
-  scaleMobile: 1.00,
-  color: 0x410756,
-  shininess: 130.00,
-  waveHeight: 40.00,
-  waveSpeed: 1.40,
-  zoom: 0.65
-})
+ gsap.registerPlugin(ScrollTrigger);
+
+  gsap.from(".cube", {
+    duration: 5,
+    x: -300,
+    opacity: 0,
+    ease: "power1.inOut",
+
+
+   
+    scrollTrigger: {
+        trigger: ".navb",
+      start: " top",
+      end: "+=100",
+      scrub: true,
+     
+    }
+  });
+    gsap.from(".cube2", {
+        duration: 5,
+        x: 300,
+        opacity: 0,
+        ease: "power1.inOut",
+        
+        scrollTrigger: {
+            trigger: ".navbar",
+        start: " top",
+        end: "+=100",
+        scrub: true,
+       
+        }
+    });
