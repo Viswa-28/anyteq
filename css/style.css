@@ -69,4 +69,13 @@
     .banner img {
         height: 220px;
     }
+
+    .second .icon {
+        width: 100px;
+        height: 100px;
+    }
+    .third h2 {
+        width: 90%;
+        font-size: 1.2rem;
+    }
 }
