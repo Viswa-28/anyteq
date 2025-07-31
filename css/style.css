@@ -34,9 +34,28 @@
 
 }
 
+/* third */
+.third{
+    height: 400px;
+    background-color: #000B28;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #FFFFFF;
+    /* padding: 20px; */
+}
 
-
-
+.third h2{
+    /* font-size: clamp(1.25rem, 0.6071rem + 3.2143vw, 3.5rem); */
+    color: #FFFFFF;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    width: 50%;
+    line-height: 1.5;
+}
 
 
 
