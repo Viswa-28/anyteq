@@ -177,16 +177,19 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        /* background: #444; */
+     
        
       }
-
+      .mySwiper .swiper-wrapper {
+  transition-timing-function: linear !important; /* No easing, constant speed */
+}
       .swiper-slide img {
         display: block;
         width: 60%;
         height: 50%;
         object-fit: cover;
       }
+
 
 
 

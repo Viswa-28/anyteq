@@ -61,13 +61,15 @@ gsap.from(".icon", {
 // swiper
 var swiper = new Swiper(".mySwiper", {
   slidesPerView: 3,
-  spaceBetween: 30,
+  spaceBetween: 10,
   loop: true,
  // Prevents gap
   speed: 5000,              // Slow, smooth scroll
   autoplay: {
     delay: 0,                // No pause
     disableOnInteraction: false,
+    // reverseDirection: true   /// Reverse direction
+    autoplayDisableOnInteraction: true // Keep autoplay after interaction
   },
   allowTouchMove: false,
   freeMode: true,            // Continuous flow
@@ -75,7 +77,7 @@ var swiper = new Swiper(".mySwiper", {
   breakpoints: {
     0: { slidesPerView: 1 },
     768: { slidesPerView: 2 },
-    1024: { slidesPerView: 4 }
+    1024: { slidesPerView: 3 }
   }
 });
 
