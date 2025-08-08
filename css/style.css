@@ -8,6 +8,37 @@
 
 
 
+/* about */
+.about {
+    /* background-color: #070707; */
+    /* padding: 60px 0; */
+}
+
+.about-img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 8px;
+}
+
+.about-text {
+    background-color: #6688F6;
+    border-radius: 8px;
+}
+
+.about-text h2 {
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.about-text p {
+    color: #fff;
+    line-height: 1.7;
+}
+
+
+
 
 /* second */
 
@@ -32,6 +63,33 @@
     cursor: pointer;
     text-align: center;
 
+}
+.parent{
+    border:  0.5px solid;
+   margin: 10px;
+    padding: 20px;
+    border-radius: 10px;
+    position: relative;
+    transition: all 0.3s ease-in-out;
+}
+.details {
+  display: none;
+  position: absolute;
+  background-color: #61006C;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  /* width: 220px; */
+  text-align: center;
+  font-size: 18px;
+  color: #fef4f4;
+  /* margin-top: 10px; */
+  z-index: 10;
+ 
+}
+
+.details.show{
+    display: block;
 }
 
 /* third */
@@ -62,9 +120,93 @@
 
 
 
+/* test */
+
+
+
+
+/* how we works */
+.work{
+    height: 500px;
+    background-color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #070707;
+    padding: 20px;
+    width: 100%;
+}
+.work .row{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    color: #070707;
+    padding: 20px;
+}
+
+
+.svg{
+    height: 100px;
+    width: 100px;
+    margin: 20px
+}
+
+
+/* carousel */
+
+.swiper {
+  width: 600px;
+  height: 300px;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* media */
+@media screen and (max-width: 968px) {
+    .banner img {
+        height: 300px;
+    }
+    .work{
+    height: auto;
+    background-color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #070707;
+    padding: 20px;
+    width: 100%;
+}
+.third{
+    height: auto;
+    background-color: #000B28;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #FFFFFF;
+    /* padding: 20px; */
+}
+    
+}
+
+
+
+
+
 @media (max-width: 468px) {
     .banner img {
         height: 220px;
