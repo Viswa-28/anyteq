@@ -59,39 +59,32 @@ gsap.from(".icon", {
 
 
 // swiper
-const swiper = new Swiper('.swiper', {
-  // Optional parameters
-  direction: 'horizontal',
+var swiper = new Swiper(".mySwiper", {
+  slidesPerView: 3,
+  spaceBetween: 30,
   loop: true,
-
-  // If we need parallax
-  parallax: true,
-
-  // Navigation arrows
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
+ // Prevents gap
+  speed: 5000,              // Slow, smooth scroll
+  autoplay: {
+    delay: 0,                // No pause
+    disableOnInteraction: false,
   },
-
-
-  // If we need pagination
-  pagination: {
-    el: '.swiper-pagination',
-
-  },
-
-  // Navigation arrows
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-
-  },
-
-  // And if we need scrollbar
-  scrollbar: {
-    el: '.swiper-scrollbar',
-
-
-  },
+  allowTouchMove: false,
+  freeMode: true,            // Continuous flow
+  freeModeMomentum: false,   // No bounce at edges
+  breakpoints: {
+    0: { slidesPerView: 1 },
+    768: { slidesPerView: 2 },
+    1024: { slidesPerView: 4 }
+  }
 });
+
+// Pause on hover
+$(".mySwiper").on("mouseenter", function() {
+  swiper.autoplay.stop();
+});
+$(".mySwiper").on("mouseleave", function() {
+  swiper.autoplay.start();
+});
+
 
